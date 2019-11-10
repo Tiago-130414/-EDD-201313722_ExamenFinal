@@ -39,7 +39,6 @@ public class ArbolLinealizado {
             br = new BufferedReader(new FileReader(csvFile));
             while ((line = br.readLine()) != null) {
                 String[] datos = line.split(separador);
-                //datos[0] = carne ; datos[1] = nombre
                 if (!datos[0].equals("carne")) {
                     datosCSV[cont].carnet = Integer.parseInt(datos[0]);
                 }
@@ -49,7 +48,6 @@ public class ArbolLinealizado {
                 if (!datos[0].equals("carne") && !datos[1].equals("nombre")) {
                     cont++;
                 }
-                //System.out.println(datos[0] +"\t"+ datos[1]);
 
             }
         } catch (FileNotFoundException e) {
@@ -78,7 +76,7 @@ public class ArbolLinealizado {
     }
 
     public void insertarAVL(int cnt, String nom) {
-
+        //insercion de arbol
     }
 
     public int calcularIZQ(int ind) {
